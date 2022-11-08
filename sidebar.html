@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="practice.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar">
+       <div onclick="data()" class="lines">
+        <span>-</span>
+        <span class="touch_span">-</span>
+        <span class="touch_span">-</span>
+       </div>
+       <ul id="list">
+        <li class="list-1">courses</li>
+        <li class="list-2">contact</li>
+        <li class="list-3">home</li>
+        <li class="list-4">about</li>
+       </ul>
+    </nav>
+    <script>
+        function data(){
+           let val= document.getElementById('list');
+           if(val.style.display==='block')
+           {
+            val.style.display='none';
+           }
+           else{
+            val.style.display='block';
+           }
+        }
+    </script>
+
+</body>
+</html>
